@@ -7,7 +7,7 @@ Ví dụ: Git
 || Khởi tạo | Cấu hình | Working Directory | Staging Area | Repository |
 |-------|-------------------|--------------|---------------------|----------------------|--------------------|
 | **Nội dung** | Tạo repo Git trong thư mục hiện tại | Cấu hình git cho username cụ thể |File add/edit/delete | File được chọn để commit | Nơi chứa lịch sử commit |
-| **Câu lệnh** | git init | **1 repo (đứng tại repo đó)**: <br>git config user.name "name" <br>git config user.email "email"<br><br>**Cho toàn bộ máy tính (default)**:<br>git config --global user.name "name"<br>git config --global user.email "email" | - | **Add file cụ thể**: git add abc.js <br><br>**Add toàn bộ:** git add . | **Lưu commit trong máy Local:** git commit -m"comment" <br><br>**Lưu commit trên server (GitHub) :** git push origin main   |
+| **Câu lệnh** | git init | **1 repo (đứng tại repo đó)**: <br>git config user.name "name" <br>git config user.email "email"<br><br>**Cho toàn bộ máy tính (default)**:<br>git config --global user.name "name"<br>git config --global user.email "email" | - | **Add file cụ thể**: git add abc.js <br><br>**Add toàn bộ:** git add . | **Lưu commit trong máy Local:** git commit -m"comment" <br><br>**Lưu commit trên server (GitHub) :** git push origin main<br><br>**push một nhánh lên GitHub**:git push origin <tên_nhánh>   |
 
 **Các câu lệnh khác:**
 1. Xem trạng thái file: git status
