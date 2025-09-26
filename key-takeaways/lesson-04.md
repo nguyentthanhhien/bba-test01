@@ -230,6 +230,23 @@ console.log(className.indexOf("Play")); // in ra 4
 - **filter** tạo mảng mới = các phần tử thỏa điều kiện trong mảng gốc
 - **find**: tìm & trả về phần tử đầu tiên trong mảng thỏa điều kiện. Không tìm thấy trả về `undefined`
 - **reduce**: gộp tất cả phần tử của mảng thành một giá trị duy nhất. Giá trị này có thể là: số, chuỗi, object, hoặc thậm chí là một mảng mới
+```js
+// ○ Các hằng số lưu coins theo level:
+// ■ Level 1: 25;
+// ■ Level 2: 30;
+// ■ Level 3: 45;
+// ○ Tính giá trị trung bình coin của 3 level và in ra console.
+
+const coins = [
+    { level: 1, coin: 25 },
+    { level: 2, coin: 30 },
+    { level: 3, coin: 45 }
+];
+// Tính giá trị trung bình coin của 3 level
+const average = coins.reduce((sum, { coin }) => sum + coin, 0) / coins.length;
+// in ra console và xử lý làm tròn
+console.log(`average: ${average.toFixed(2)}`);
+```
 - **some**: Kiểm tra xem có ít nhất một phần tử trong mảng thỏa mãn điều kiện hay không và trả về true/false
 - **every**: Kiểm tra xem tất cả phần tử trong mảng có thỏa mãn điều kiện hay không. Trả về true/false.
 - **sort**: Sắp xếp các phần tử trong mảng theo thứ tự (mặc định là alphabet/tăng dần). Thay đổi mảng gốc.
