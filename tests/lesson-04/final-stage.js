@@ -5,7 +5,7 @@ let pairs1 = [];
 
 // cặp số i + j = sum, sao cho sum chia hết cho 17
 for (let i = 1; i <= 100; i++) {
-    for (let j = 1; j <= 100; j++) {
+    for (let j = i + 1; j <= 100; j++) {
         if ((i + j) % 17 === 0) {
             pairs1.push({ i, j, sum: i + j });
         }
@@ -30,7 +30,7 @@ let pairs2 = [];
 for (let sum = 17; sum <= 200; sum += 17) {
     for (let i = 1; i <= 100; i++) {
         let j = sum - i;
-        if (j >= 1 && j <= 100) {
+        if (j >= 1 && j <= 100 && i < j) { // thêm điều kiện tránh lặp ngược (i,j) & (j,i) và tránh cặp trùng (i, i) (j, j)
             pairs2.push({ i, j, sum});
         }
     }
